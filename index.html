@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aathithyan K | ECE Engineer & IoT Developer</title>
+    <meta name="description"
+        content="Professional portfolio of Aathithyan K, an Electronics and Communication Engineering (ECE) student specializing in embedded systems, Java, and IoT.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="sidebar-hidden">
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <h1>AATHITHYAN K</h1>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="profile-img-container">
+            <img src="assets/profile.jpeg" alt="Aathithyan K">
+        </div>
+        <h1>Aathithyan K</h1>
+        <p>ECE ENGINEER</p>
+
+        <div class="social-links">
+            <a href="https://github.com/Aathithyan02" target="_blank" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/k-aathithyan-929326305/" target="_blank" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/aathithyan_02?igsh=aTZpeGZsZjM0NnB0" target="_blank"
+                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=8838166175&text&type=phone_number&app_absent=0"
+                target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="far fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fas fa-network-wired"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
+            <li><a href="#contact"><i class="far fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <button class="btn-download" id="downloadResumeBtn"><i class="fas fa-download"></i> Download CV</button>
+    </nav>
+
+    <!-- Overlay element for mobile menu -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <h4>ECE Student | Innovator | Problem Solver</h4>
+                <h2><span class="green decrypt-text">AATHITHYAN</span> <span class="gold decrypt-text">K</span></h2>
+                <p>From Logic Gates to Complex Systems, I design, simulate, and implement ideas that power the future.
+                    Driven by a curiosity for how hardware and software come together to create real impact.</p>
+
+                <div>
+                    <button class="btn-primary"
+                        onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">EXPLORE MY
+                        WORK &rarr;</button>
+                    <button class="btn-secondary"
+                        onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">CONTACT ME
+                        <i class="far fa-envelope"></i></button>
+                    <button class="btn-secondary" id="heroDownloadBtn">DOWNLOAD CV
+                        <i class="fas fa-download"></i></button>
+                </div>
+
+                <div class="system-status">
+                    <div class="status-dot"></div>
+                    All Systems Operational
+                    <svg class="heartbeat-svg" viewBox="0 0 100 20">
+                        <polyline class="heartbeat-line" points="0,10 20,10 30,0 40,20 50,5 60,15 70,10 100,10" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero-graphic">
+                <!-- Circuit-board traces in SVG background -->
+                <svg class="circuit-bg" viewBox="0 0 400 400" aria-hidden="true">
+                    <path class="circuit-line" d="M 50,50 L 150,50 L 150,150" />
+                    <path class="circuit-line" d="M 350,50 L 250,50 L 250,150" />
+                    <path class="circuit-line" d="M 50,350 L 150,350 L 150,250" />
+                    <path class="circuit-line" d="M 350,350 L 250,350 L 250,250" />
+                    <path class="circuit-line" d="M 200,20 L 200,100" />
+                    <path class="circuit-line" d="M 200,380 L 200,300" />
+                    <path class="circuit-line" d="M 20,200 L 100,200" />
+                    <path class="circuit-line" d="M 380,200 L 300,200" />
+
+                    <circle cx="50" cy="50" r="5" class="circuit-node" />
+                    <circle cx="350" cy="50" r="5" class="circuit-node" />
+                    <circle cx="50" cy="350" r="5" class="circuit-node" />
+                    <circle cx="350" cy="350" r="5" class="circuit-node" />
+                </svg>
+
+                <!-- Abstract Microprocessor representation -->
+                <div class="chip-wrapper">
+                    <div class="chip">
+                        <!-- Hologram projection -->
+                        <div class="hologram-container">
+                            <div class="holo-cone"></div>
+                            <div class="holo-beam"></div>
+                            <div class="holo-image-wrap">
+                                <img src="assets/profile.jpeg" alt="Aathithyan K Hologram">
+                                <div class="holo-scanbar"></div>
+                                <div class="holo-glow-border"></div>
+                            </div>
+                            <div class="holo-ring"></div>
+                            <div class="holo-particles" id="holoParticles"></div>
+                        </div>
+
+                        <h3>AATHITHYAN</h3>
+                    </div>
+                    <p class="chip-hint">touch to view me</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section-box" id="about">
+            <h3 class="section-title">ABOUT ME</h3>
+            <div class="about-grid">
+                <div class="about-text scroll-reveal-left">
+                    <p>I am a passionate Electronics and Communication Engineering (ECE) student at V.S.B. College of
+                        Engineering Technical Campus, dedicated to building responsive embedded technologies and robust
+                        software logic. I thrive on translating abstract hardware schematics into functional
+                        microcontroller logic and OOP-driven software structures.</p>
+                    <p style="margin-top: 15px;">With practical hands-on experience spanning core Java development at
+                        Qaroo India and microcontroller firmware programming at Manfree Technologies, I bridge the gap
+                        between engineering theory and functional real-world deployments.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card scroll-reveal-right reveal-delay-1">
+                        <span class="stat-number">8.4</span>
+                        <span class="stat-label">B.E. CGPA</span>
+                    </div>
+                    <div class="stat-card scroll-reveal-right reveal-delay-2">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Internships Done</span>
+                    </div>
+                    <div class="stat-card scroll-reveal-right reveal-delay-3">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Patent Published</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Dashboard -->
+        <section class="section-box" id="skills">
+            <h3 class="section-title">SKILLS DASHBOARD</h3>
+            <div class="skills-container">
+
+                <!-- Radar Chart -->
+                <div class="radar-chart scroll-reveal-left">
+                    <canvas id="skillsRadarChart"></canvas>
+                </div>
+
+                <!-- Linear Progress -->
+                <div class="linear-skills scroll-reveal-right">
+                    <h4 style="color:var(--text-muted); font-family:var(--font-mono); margin-bottom: 10px;">TECHNICAL
+                        SKILLS</h4>
+
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Embedded Systems</span><span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress-width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Java</span><span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress-width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Python</span><span>50%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress-width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Arduino</span><span>50%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress-width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>HTML/CSS/MySQL</span><span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress-width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="linear-skills scroll-reveal-right reveal-delay-2">
+                    <h4 style="color:var(--text-muted); font-family:var(--font-mono); margin-bottom: 10px;">TOOLS &
+                        SOFTWARE</h4>
+                    <div class="tools-grid">
+                        <div class="tool-item scroll-reveal reveal-delay-1">
+                            <i class="fas fa-code"></i>
+                            <p>VS Code</p>
+                        </div>
+                        <div class="tool-item scroll-reveal reveal-delay-2">
+                            <i class="fab fa-github"></i>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="tool-item scroll-reveal reveal-delay-3">
+                            <i class="fas fa-robot"></i>
+                            <p>Antigravity</p>
+                        </div>
+                        <div class="tool-item scroll-reveal reveal-delay-4">
+                            <i class="fas fa-project-diagram"></i>
+                            <p>Proteus</p>
+                        </div>
+                        <div class="tool-item scroll-reveal reveal-delay-5">
+                            <i class="fas fa-laptop-code"></i>
+                            <p>Arduino IDE</p>
+                        </div>
+                        <div class="tool-item scroll-reveal reveal-delay-6">
+                            <i class="fas fa-database"></i>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section-box" id="projects">
+            <h3 class="section-title">MY PROJECTS</h3>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card scroll-reveal-3d">
+                    <div class="project-img" onclick="openImageModal(this.querySelector('img').src)">
+                        <img src="assets/WhatsApp Image 2026-07-06 at 10.42.28 PM.jpeg"
+                            alt="Dynamic Weight Measuring & Logging"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">C</span>
+                        <span class="tag">Hardware</span>
+                    </div>
+                    <h3>Dynamic Weight Measuring & Logging</h3>
+                    <p>Automated checkweigher conveyor belt using Arduino, 24-bit HX711 ADC, and strain-gauge load cell.
+                        Coded moving average filters to smooth data streams and output to CSV.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/manialgo/Dynamic-Weighing-System.git" target="_blank"
+                            aria-label="Project Source Code"><i class="fas fa-code"></i> Code</a>
+                        <a href="https://drive.google.com/file/d/1rTkyX7XlJ1hYU7GQ9VAzL-JGqrsjHErJ/view?usp=drive_link"
+                            target="_blank" aria-label="Project Working Demo"><i class="fas fa-external-link-alt"></i>
+                            Working</a>
+                        <a href="#" aria-label="Project Simulation"><i class="fas fa-play-circle"></i> Simulation</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Career Path / Timeline -->
+        <section class="section-box" id="experience">
+            <h3 class="section-title">MY CAREER PATH</h3>
+            <div class="timeline-grid">
+                <div class="timeline-card scroll-reveal reveal-delay-1">
+                    <i class="fas fa-book-open timeline-icon"></i>
+                    <h4>FOUNDATION</h4>
+                    <p>B.E Electronics & Communication Engineering (GPA 8.4) at V.S.B College of Engineering.</p>
+                </div>
+                <div class="timeline-card scroll-reveal reveal-delay-2">
+                    <i class="fas fa-microscope timeline-icon"></i>
+                    <h4>LEARN & EXPLORE</h4>
+                    <p><span class="highlight-term">Embedded System Intern at Manfree Technologies</span>. Built
+                        real-time apps with PIC microcontrollers.</p>
+                </div>
+                <div class="timeline-card scroll-reveal reveal-delay-3">
+                    <i class="fas fa-cogs timeline-icon"></i>
+                    <h4>BUILD & INNOVATE</h4>
+                    <p><span class="highlight-term">Java Intern at Qaroo India</span>. Developed and tested core OOP
+                        applications and isolated bugs.</p>
+                </div>
+                <div class="timeline-card scroll-reveal reveal-delay-4">
+                    <i class="fas fa-rocket timeline-icon"></i>
+                    <h4>PROFESSIONAL GOAL</h4>
+                    <p>To bridge electronics with intelligent software, building efficient, real-world solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-box" id="education">
+            <h3 class="section-title">EDUCATION</h3>
+            <div class="education-timeline">
+                <div class="edu-item scroll-reveal reveal-delay-1">
+                    <div class="edu-dot"></div>
+                    <div class="edu-content">
+                        <span class="edu-date">2026 - Present</span>
+                        <h4>Bachelor of Engineering (B.E) - Electronics and Communication Engineering</h4>
+                        <h5>V.S.B. College of Engineering Technical Campus, Coimbatore</h5>
+                        <p>CGPA: 8.4/10.0</p>
+                        <p class="edu-details">Core Courses: Embedded Systems, Digital Signal Processing,Python, Java
+                            OOP, MySQL Databases.</p>
+                    </div>
+                </div>
+                <div class="edu-item scroll-reveal reveal-delay-2">
+                    <div class="edu-dot"></div>
+                    <div class="edu-content">
+                        <span class="edu-date">Completed 2023</span>
+                        <h4>Higher Secondary Schooling (HSC)</h4>
+                        <h5>Dr.V.Genguswamy Naidu Matric.Hr.Sec.School. Coimbatore </h5>
+                        <p>Percentage: 86%</p>
+                        <p class="edu-details">Focused on Advanced Mathematics, Physics, Chemistry, and Computer
+                            Science.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="section-box" id="certificates">
+            <h3 class="section-title">CERTIFICATES & ACHIEVEMENTS</h3>
+            <div class="certificates-grid">
+                <div class="cert-card scroll-reveal reveal-delay-1">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h4>Embedded Systems Design</h4>
+                    <p>Internship certification from Manfree Technologies. Built and deployed firmware on PIC
+                        microcontrollers using MPLAB X and Proteus.</p>
+                </div>
+                <div class="cert-card scroll-reveal reveal-delay-2">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <h4>Core Java Programming</h4>
+                    <p>Internship certification from Qaroo India. Mastered OOP principles, exception handling, data
+                        structures, and isolated multi-threaded runtime bugs.</p>
+                </div>
+                <div class="cert-card scroll-reveal reveal-delay-3">
+                    <i class="fas fa-award cert-icon"></i>
+                    <h4>Robotic Surveillance Boat Patent</h4>
+                    <p>Official Patent publication (September 2025) issued by IP Rights India. Focuses on IoT
+                        architecture and visual data acquisition.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-box" id="contact">
+            <h3 class="section-title">CONTACT ME</h3>
+            <div class="contact-wrapper">
+
+                <!-- Contact Form -->
+                <form class="contact-form scroll-reveal-left" id="contactForm" action="https://formsubmit.co/aathithyankiruba@gmail.com"
+                    method="POST">
+                    <!-- FormSubmit hidden config -->
+                    <input type="hidden" name="_subject" value="New message from Portfolio Contact Form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMobile">Mobile Number</label>
+                        <input type="tel" id="contactMobile" name="mobile" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" id="contactSubmitBtn">
+                        <i class="fas fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info scroll-reveal-right">
+                    <p class="contact-info-title">// Direct Contact</p>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">aathithyankiruba@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-divider"></div>
+
+                    <a href="tel:+91 8838166175" class="contact-card" aria-label="Call">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">Call</span>
+                            <span class="contact-card-value">+91 8838166175</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-divider"></div>
+
+                    <a href="https://wa.me/8838166175" target="_blank" class="contact-card whatsapp"
+                        aria-label="WhatsApp">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <span class="contact-card-label">WhatsApp</span>
+                            <span class="contact-card-value">+91 8838166175</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    
+    
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal(event)">
+        <button class="modal-close" onclick="closeImageModal(event)">&times;</button>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="Full view">
+        </div>
+    </div>
+    
+    <script src="js/ogl.umd.js"></script>
+    <script src="js/siderays.js"></script>
+    <script src="js/shapegrid.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
